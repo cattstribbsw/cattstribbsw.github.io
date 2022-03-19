@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Web site For Sammie and Stibbo Wedding"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" >
+    <!-- <script src="https://kit.fontawesome.com/be99808d02.js" crossorigin="anonymous"></script> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script> -->
+    
+    <title>Stibbs Catt Wedding</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <header id="headerSection" class="header">
+    <nav class="navbar navbar-expand-md">
+      <!-- <a class="navbar-brand navbar__brand" href="#headerSection">Nicola Evans | Fine Art</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li onClick="smoothScroll('infoSec')" class="nav-item navbar__item">
+            <a class="nav-link nav-link-scroll navbar__link" href="#infoSec">Date & Important Information <span class="mx-1 d-none d-md-inline">|</span> </a>
+          </li>
+          <li onClick="smoothScroll('joinUs')" class="nav-item navbar__item">
+            <a class="nav-link nav-link-scroll navbar__link" href="#joinUs">Join Us <span class="mx-1 d-none d-md-inline">|</span></a>
+          </li>
+          <li onClick="smoothScroll('rsvp')" class="nav-item navbar__item">
+            <a class="nav-link nav-link-scroll navbar__link" href="#rsvp">RSVP <span class="mx-1 d-none d-md-inline">|</span></a>
+          </li>
+          <li onClick="smoothScroll('withThanks')" class="nav-item navbar__item">
+            <a class="nav-link nav-link-scroll navbar__link" href="#withThanks">With Special Thanks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+  <section class="hero">
+      <div class="hero__container">
+          <img src="images/line_top.png" alt="line top" class="hero__line--top" />
+          <h1 class="hero__heading">Sammie & Matthew</h1>
+          <p class="hero__sub">Are Getting Married</p>
+          <img src="images/line_top.png" alt="line bottom" class="hero__line--bottom" />
+      </div>
+  </section>
+  <section id="infoSec" class="when">
+        <div class="container text-center position-relative">
+          <h2 class="when__heading h1">September 10th, 2022</h2>
+          <p>The Bell House, Crowbrook Road, Askett<br /> HP27 9LS</p>
+            <div id="countdown" class="when__countdown row justify-content-center">
+                <div class="col-6 col-sm-3">
+                    <div id="countdownDays" class="when__countdown--cont shadow">
+                        <div id="days" class="when__countdown--time"></div>
+                        <div class="when__countdown--desc">Days</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div id="countdownHours" class="when__countdown--cont shadow">
+                        <div id="hours" class="when__countdown--time"></div>
+                        <div class="when__countdown--desc">Hours</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div id="countdownMins" class="when__countdown--cont shadow">
+                        <div id="mins" class="when__countdown--time"></div>
+                        <div class="when__countdown--desc">Minutes</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div id="countdownSecs" class="when__countdown--cont shadow">
+                        <div id="secs" class="when__countdown--time"></div>
+                        <div class="when__countdown--desc">Seconds</div>
+                    </div>
+                </div>
+            </div>
+             <img src="images/line_top.png" alt="flowers" class="section--divider countdown--divider" />
+        </div>
+        <div class="container mt-4">
+            <div class="row align-items-start justify-content-center text-center">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="info__content">
+                      <h3 class="info__heading" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">Order Of The Day</h3>
+                      <ul style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">
+                        <li>5pm - Arrival & photos of your stunning selves</li>
+                        <li>6pm - A feast of Mexican at the Mexican Food Stall</li>
+                        <li>7pm - Speeches and first dance (finallllly!)</li>
+                        <li>10pm - Bacon rolls</li>
+                        <li>Goodbyes at Midnight</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="info__content">
+                      <h3 class="info__heading" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">Parking</h3>
+                      <p class="info__text" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">There will be parking available in the field at the venue just come down the driveway and the parking will be signposted on your right</p>
+                  </div>
+                </div>
+  
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="info__content">
+                      <h3 class="info__heading" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">Accomodation</h3>
+                      <p class="info__text" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">If you need to stay over the night, there are gorgeous places to stay in nearby Amersham or Thame. Contact us if you need more information.</p>
+                  </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="info__content">
+                    <h3 class="info__heading" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">Gifts</h3>
+                    <p class="info__text" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)">Obviously your attendance to celebrate with us, is most important, however, if you would like to give, we would be so grateful for any contributions to our honeymoon pot as we intend to celebrate (somewhere hot) becoming Mr and Mrs Stibbs (yes, two years on and I still haven't change my name…not until we party)</p>
+                </div>
+            </div>
+        </div>
+  </section>
+    <section id="joinUs" class="us">
+        <div class="us__box shadow">
+            <h2 class="section__heading h1">Join Us</h2>
+            <p>
+                Welcome valued guest to our Wedding Party invite 3.0! We are so excited to finally have this opportunity to share our love with you through the medium of good food, crazy dancing and oodles of alcohol.
+            </p>
+            <p>
+                Through challenges of the last 2 years, let's let lose and party! This event will be super fun with all the yummy bits of the usual wedding day, we will have music, photos, speeches and, of course, the first dance. Please wear your best wedding attire and be flexed to dance, dance, dance!
+            </p>
+            <a href="#form" class="btn btn-primary">RSVP</a>
+        </div>
+    </section>
+  </section>
+  <section id="rsvp" class="form">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="container">
+                
+                <div class="form__container shadow">
+                    <div class="row h-100">
+                        <div class="col-12 col-md-5">
+                            <div class="form__wrapper">
+                              <h2 class="form__heading text-center h1">Are You Coming?</h2>
+                              <p class="form__sub text-center">Let us know if you can come by filling out the form below</p>
+                              <form class="form__form" onSubmit="submitEmail()">
+                                  <div class="form-group mb-3">
+                                      <label class="form__label col-12 p-0 sr-only" for="name">Name:</label>
+                                      <input placeholder="Name" type="text" name="name" id="name" class="form__input col-12 form-control" required />
+                                  </div>
+                                  <div class="form-group mb-3">
+                                      <label class="form__label col-12 p-0 sr-only" for="email">Email:</label>
+                                      <input placeholder="Email" type="email" name="email" id="email" class="form__input col-12 form-control" required />
+                                  </div>
+                                  <div class="form-group mb-3">
+                                      <label class="form__label text-center col-12 mb-2 fw-bold" for="response">Are You Coming?</label>
+                                      <div class="d-flex align-items-center justify-content-center">
+                                          <div class="from__radio-container mr-2">
+                                              <input type="radio" id="Yes" name="coming" value="Yes">
+                                              <label for="Yes">Yes</label>
+                                          </div>
+                                          <div class="form__radio-container">
+                                              <input type="radio" id="No" name="coming" value="No">
+                                              <label for="No">No</label>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="form__button text-center">
+                                    <div id="form__spinner" class="spinner-border d-none" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <button type="submit" class="form__button--btn btn-primary btn">Submit</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-7 form__bg">
+                          <div class="form__bg--img"></div>
+                      </div>
+                  </div>
+
+              </div>
+              
+                </div>
+            </div>
+        </div>
+  </section>
+  <section id="withThanks" class="thanks text-center">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-12 col-lg-10">
+                  <h2 class="h1">With Special Thanks</h2>
+                  <p>This event is being held with our very special village at the heart of it. On our intended wedding day of 2020, the people of the village came out in their hoards (distanced of course) to mark the occasion. Like no other, the village has once again helped us to put on this event</p>
+                  <p>We cannot thank the Lodges enough for their kindness in hosting this event for us!</p>
+                  <p>Massive thanks to Dave Cox for DJing, he actually moved a holiday of a life time to attend the event.</p>
+                  <p>Alison and Mary, thank you and all of your wonderful experience in planning events </p>
+                  <p>Our family and friends, thank you for the joy you bring to our lives, see you there!</p>
+              </div>
+              <div class="col-12 col-lg-10">
+                  <div class="row">
+                      <div class="col-md-4 col-12 d-none d-md-block">
+                          <div class="thanks__bg thanks__bg--1"></div>
+                      </div>
+                      <div class="col-md-4 col-12">
+                        <div class="thanks__bg thanks__bg--2"></div>
+                    </div>
+                    <div class="col-md-4 col-12 d-none d-md-block">
+                        <div class="thanks__bg thanks__bg--3"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title h3" id="responseModalLabel">Thanks For Your Response!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>You should recieve an email to let you know we've got your RSVP. If you don't have one in the next 20 minutes, let us know</p>
+            <p id="comingLine" class="d-none">We look forward to celebrating with you!</p>
+            <p>Matt & Sammie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h3" id="responseModalLabel">Oh No!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>It looks like something's gone wrong, please refresh the page and try again. If that still doesn't work, please email us at ...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("SbVUcqg6GgyVq9Gyk");
+   })();
+
+   const submitEmail = () => {
+       event.preventDefault();
+       const response = document.getElementById('Yes').checked ? 'Yes' : 'No';
+       const successModal = new bootstrap.Modal(document.getElementById('responseModal'));
+       const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+        var templateParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            response: response
+        };
+
+        document.getElementById('form__spinner').classList.remove('d-none')
+
+        console.log("TEMPLATE PARAMS ", templateParams);
+ 
+        emailjs.send('service_11oqetf', 'template_417f6ue', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            if (templateParams.response == 'Yes'){
+                document.getElementById('comingLine').classList.remove('d-none')
+            }else{
+                document.getElementById('comingLine').classList.add('d-none')
+            }
+            if(response.status == 200){
+                successModal.show();
+            }
+        document.getElementById('form__spinner').classList.add('d-none')
+
+        }, function(error) {
+            console.log('FAILED...', error);
+            errorModal.show();
+        document.getElementById('form__spinner').classList.add('d-none')
+
+        });
+   }
+</script>
+
+<script>
+    const endDate = new Date('Sept 10, 2022 00:00:00');
+
+    const _second = 1000;
+    const _minute = _second * 60;
+    const _hour = _minute * 60;
+    const _day = _hour * 24;
+    let timer;
+
+    function showRemaining() {
+        const now = new Date();
+        const distance = endDate - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'It\'s TODAY!!!!!!';
+            return;
+        }
+        let days = Math.floor(distance / _day);
+        let hours = Math.floor((distance % _day) / _hour);
+        let minutes = Math.floor((distance % _hour) / _minute);
+        let seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('days').innerHTML = days;
+        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('mins').innerHTML = minutes;
+        document.getElementById('secs').innerHTML = seconds;
+
+
+        // document.getElementById('countdown').innerHTML = days + 'days ';
+        // document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        // document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        // document.getElementById('countdown').innerHTML += seconds + 'secs';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
+
+<script>
+    const smoothScroll = (id) => {
+        const el = document.querySelector('#'+id);
+        el.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+
+    
+    (function(){
+        wheresHeader();
+    })();
+
+  window.addEventListener("scroll", wheresHeader);
+
+  function wheresHeader(){
+
+
+var vertScrollPos = window.scrollY;
+var headerHeight = document.getElementById('headerSection').offsetHeight;
+
+if(vertScrollPos > headerHeight){
+  // headerHeight.children[0].classList.add('bg-dark');
+  document.getElementById('headerSection').children[0].classList.add('bg-dark');
+}else{
+  document.getElementById('headerSection').children[0].classList.remove('bg-dark');
+}
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.navbar-toggler').click(function(){
+            $('#navbarSupportedContent').toggle('show');
+        })
+    })
+</script>
+
+</body>
+</html>
